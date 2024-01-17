@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 # Load the pre-trained model
-best_rf_model = joblib.load('/app/best_rf_model.pkl')
+best_rf_model = joblib.load('/workspaces/Heart-Disease-Prediction/notebook/best_rf_model.pkl')
 
 # Function to preprocess user input
 def preprocess_input(age, sex, chest_pain_type, resting_bp, cholesterol, fasting_bs,
@@ -76,6 +76,6 @@ if st.button("Predict"):
     # Display result
     st.subheader("Prediction Result:")
     if prediction == 1:
-        st.success("The model predicts that the patient may have heart disease.")
+        st.write("The model predicts that the patient may have heart disease.")
     else:
-        st.success("The model predicts that the patient may not have heart disease.")
+        st.write("The model predicts that the patient may not have heart disease.")
