@@ -36,6 +36,21 @@ def preprocess_input(age, sex, chest_pain_type, resting_bp, cholesterol, fasting
 # Streamlit app
 st.title("Heart Disease Prediction App")
 
+# Explanation for each input feature
+st.markdown("""
+    - **Age:** Age of the patient [years]
+    - **Sex:** Sex of the patient [M: Male, F: Female]
+    - **ChestPainType:** Chest pain type [TA: Typical Angina, ATA: Atypical Angina, NAP: Non-Anginal Pain, ASY: Asymptomatic]
+    - **RestingBP:** Resting blood pressure [mm Hg]
+    - **Cholesterol:** Serum cholesterol [mm/dl]
+    - **FastingBS:** Fasting blood sugar [1: if FastingBS > 120 mg/dl, 0: otherwise]
+    - **RestingECG:** Resting electrocardiogram results [Normal: Normal, ST: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV), LVH: showing probable or definite left ventricular hypertrophy by Estes' criteria]
+    - **MaxHR:** Maximum heart rate achieved [Numeric value between 60 and 202]
+    - **ExerciseAngina:** Exercise-induced angina [Y: Yes, N: No]
+    - **Oldpeak:** Oldpeak = ST [Numeric value measured in depression]
+    - **ST_Slope:** The slope of the peak exercise ST segment [Up: upsloping, Flat: flat, Down: downsloping]
+""")
+
 # Get user input
 age = st.slider("Select Age:", min_value=20, max_value=80, value=40)
 sex = st.selectbox("Select Gender:", ['M', 'F'])
