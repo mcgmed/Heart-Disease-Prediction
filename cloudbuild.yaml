@@ -5,6 +5,6 @@ steps:
     args: ['push', 'gcr.io/$PROJECT_ID/heart-disease-web-app']
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
-    args: ['run', 'deploy', 'heart-disease-prediction', '--region', 'us-central1' '--image', 'gcr.io/$PROJECT_ID/heart-disease-web-app']
+    args: ['run', 'deploy', 'heart-disease-prediction', '--region', 'us-central1', '--image', 'gcr.io/$PROJECT_ID/heart-disease-web-app']
 images:
   - 'gcr.io/$PROJECT_ID/heart-disease-web-app'
