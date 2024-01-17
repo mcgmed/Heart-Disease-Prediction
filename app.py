@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 # Load the pre-trained model
-best_rf_model = joblib.load('/workspaces/Heart-Disease-Prediction/notebook/best_rf_model.pkl')
+best_rf_model = joblib.load('/app/notebook/best_rf_model.pkl')
 
 # Function to preprocess user input
 def preprocess_input(age, sex, chest_pain_type, resting_bp, cholesterol, fasting_bs,
