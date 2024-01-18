@@ -8,7 +8,7 @@ This repository contains the source code for a Streamlit application that predic
 
 The application is deployed on Google Cloud Platform using the Cloud Run service. Continuous integration and deployment are implemented using Google Cloud Build.
 
-![Cloud Run Status](cloud-run-cicd.png)
+![Cloud Run Status](screenshot-cloud-run-cicd.png)
 
 ## Usage
 
