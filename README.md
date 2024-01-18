@@ -30,9 +30,8 @@ Access the application in your web browser at http://localhost:8501.
 
 To run the application using Docker, build the Docker image and run a container:
 
-```bash
-docker build -t heart-disease-prediction-app .
-docker run -p 8501:8501 heart-disease-prediction-app
+`docker build -t heart-disease-prediction-app .`
+`docker run -p 8501:8501 heart-disease-prediction-app`
 
 ## Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests.
