@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM python:3.9
 
 WORKDIR /app
 
@@ -10,4 +10,4 @@ COPY notebook/best_rf_model.pkl notebook/best_rf_model.pkl
 
 EXPOSE 8501
 
-ENTRYPOINT ["streamlit", "run", "app.py"]
+CMD ["streamlit", "run", "app.py"]
