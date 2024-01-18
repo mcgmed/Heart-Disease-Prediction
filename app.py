@@ -38,6 +38,7 @@ st.title("Heart Disease Prediction App")
 
 # Explanation for each input feature
 st.markdown("""
+            **Explanations:**
     - **Age:** Age of the patient [years]
     - **Sex:** Sex of the patient [M: Male, F: Female]
     - **ChestPainType:** Chest pain type [TA: Typical Angina, ATA: Atypical Angina, NAP: Non-Anginal Pain, ASY: Asymptomatic]
